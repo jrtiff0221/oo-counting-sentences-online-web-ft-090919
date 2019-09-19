@@ -24,3 +24,5 @@ class String
 end
 
 "one. two. three?".count_sentences
+complex_string = "This, well, is a sentence. This is too!! And so is this, I think? Woo..."
+complex_string.count_sentences
