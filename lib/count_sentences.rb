@@ -15,7 +15,8 @@ class String
   end
 
   def count_sentences
-    sentences = self.split(/(\!|\?|\.)/).select { |sentence| sentence.length > 0 }
+    # sentences = self.split(/(\!|\?|\.)/).select { |sentence| sentence.length > 0 }
+    sentences = self.split("/.").select { |sentence| sentence.length > 0 }
     puts "\nsentences"
     puts sentences
     
