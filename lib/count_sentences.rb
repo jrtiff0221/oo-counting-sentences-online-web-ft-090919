@@ -15,6 +15,6 @@ class String
   end
 
   def count_sentences
-    self.split(/[.?!]/).length
+    self.split(/[.?!]/).select { |sentence| sentence.length > 0 }.length
   end
 end
