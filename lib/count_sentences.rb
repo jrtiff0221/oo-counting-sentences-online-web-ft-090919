@@ -15,14 +15,6 @@ class String
   end
 
   def count_sentences
-    sentences = self.split(/[.?!]/).select { |sentence| sentence.length > 0 }
-    puts "\nsentences"
-    puts sentences
-    
-    sentences.length
+    self.split(/[.?!]/).select { |sentence| sentence.length > 0 }.length
   end
 end
-
-"one. two. three?".count_sentences
-complex_string = "This, well, is a sentence. This is too!! And so is this, I think? Woo..."
-complex_string.count_sentences
