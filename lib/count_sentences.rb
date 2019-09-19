@@ -22,3 +22,5 @@ class String
     sentences.length
   end
 end
+
+"one. two. three?".count_sentences
